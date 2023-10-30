@@ -2,13 +2,13 @@ from dash import Dash, html, dcc
 import dash
 import plotly.express as px
 
-server = app.server
 
 px.defaults.template = "plotly"
 
 external_css = ["https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css", ]
 
 app = Dash(__name__, pages_folder='pages', use_pages=True, external_stylesheets=external_css)
+server = app.server
 
 app.layout = html.Div([
 	html.Br(),
