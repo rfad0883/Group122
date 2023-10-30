@@ -2,6 +2,8 @@ from dash import Dash, html, dcc
 import dash
 import plotly.express as px
 
+server = app.server
+
 px.defaults.template = "plotly"
 
 external_css = ["https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css", ]
