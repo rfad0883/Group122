@@ -8,8 +8,8 @@ import dash_bootstrap_components as dbc
 dash.register_page(__name__, path='/D', name="Procurement Insight", external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 ####################### LOAD DATASET #############################
-df1 = pd.read_csv('/home/D1_2.csv', encoding='cp1252')
-df3 = pd.read_csv('/home/D3.csv', encoding='cp1252')
+df1 = pd.read_csv('D1_2.csv', encoding='cp1252')
+df3 = pd.read_csv('D3.csv', encoding='cp1252')
 
 ####################### PAGE LAYOUT #############################
 #a = date.today()
